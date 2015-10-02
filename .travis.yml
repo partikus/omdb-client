@@ -7,12 +7,19 @@ php:
   - 7.0
   - hhvm
 
+env:
+  - GUZZLE_VERSION="~4.0"
+  - GUZZLE_VERSION="~5.0"
+  - GUZZLE_VERSION="~6.0"
+
 matrix:
   allow_failures:
     - php: 7.0
     - php: hhvm
     
 before_script:
+  - composer self-update
+  - composer require guzzlehttp/guzzle:${GUZZLE_VERSION} -n
   - composer install --dev
 
 script:

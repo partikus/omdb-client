@@ -3,7 +3,7 @@
     "description": "\"PHP OMDb Client\"",
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "~4.0"
+        "guzzlehttp/guzzle": ">=4.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.5"
