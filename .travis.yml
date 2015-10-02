@@ -16,9 +16,7 @@ matrix:
   allow_failures:
     - php: 7.0
     - php: hhvm
-  exclude:
     - env: GUZZLE_VERSION="~6.0"
-      php: 5.4
 
 before_script:
   - composer self-update
